@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35 ,35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid #000;
+    flex-basis: 400px;
+    height: 58%;
+    width: 22%;
+    padding: 20px 35px;
+}
+
+.screen {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.calculator-buttons-row{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 25px;
+}
+
+.calc-button {
+    border: 1px solid #000;
+    border-radius: 16px;
+    margin: 10px;
+    width: 150px;
+    height: 60px;
+}
+
+.calc-button:hover {
+    background-color: inherit;
+    cursor: pointer;
+}

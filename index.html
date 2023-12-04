@@ -1,46 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css files/styles.css">
-    <title>Project</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>site</title>
+    
+    <!-- CSS and Backend -->
+    <link rel="stylesheet" href="css files/styles.css" />
+    <link rel="stylesheet" href="css files/calculator.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
 
-<body class="body-1">
-    <div class="lines">
-        <span class="invis"></span>
-        <span class="small"></span>
-        <span class="big"></span>
-        <span class="invis2"></span>
-        <span class="small2"></span>
-        <span class="big2"></span>
-    </div>
-    <div class="box">
-        <span class="line--white"></span>
-        <span class="circle"></span>
-        <h1 class="Study">Study</h1>
-        <span class="circle"></span>
-        <form action="calc.html" target="_blank">
-            <button class="Calculator">Калькулятор</button>
-        </form>
-        
-        <ul class="math">
-            <li class="items">
-                <a href="#">Математика</a>
-                <ul>
-                    <li class="subs">
-                        <a href="#" class="sub1">Уравнения</a>
-                        <a href="#" class="sub2">Логарифмы</a>
-                        <a href="#" class="sub3">Графики</a>
-                    </li>
-                </ul>
+    <!-- Buttons -->
+
+    <div id="box">
+        <div class="black-line">
+          <div class="top-buttons">
+            <ul class="buttons-row-top">
+            <li class="math">
+                <a href="#">Math</a>
             </li>
-        </ul>
-        
-        <form action="https://journal.top-academy.ru/ru/main/dashboard/page/index" target="_blank">
-            <button class="journal">Журнал</button>
-        </form>
+            <li class="physics">
+              <a href="#">Physics</a>
+            </li>
+            <li class="chemistry">
+              <a href="#">Chemistry</a>
+            </li>
+            <li class="english">
+              <a href="#">English</a>
+            </li>
+            <li class="journal">
+              <a href="https://journal.top-academy.ru/ru/auth/login/index?returnUrl=%2Fru%2Fmain%2Fdashboard%2Fpage%2Findex">Journal</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Calculator -->
+
+        <div class="wrapper">
+        <div class="screen">0</div>
+
+        <div class="calculator-buttons">
+          <div class="calculator-buttons-row">
+            <button class="calc-button" id="AC">AC</button>
+            <button class="calc-button">&plus;&Backslash;&minus;</button>
+            <button class="calc-button">&percnt;</button>
+            <button class="calc-button">&times;</button>
+          </div>
+
+          <div class="calculator-buttons-row">
+            <button class="calc-button">7</button>
+            <button class="calc-button">8</button>
+            <button class="calc-button">9</button>
+            <button class="calc-button">&divide;</button>
+          </div>
+
+          <div class="calculator-buttons-row">
+            <button class="calc-button">4</button>
+            <button class="calc-button">5</button>
+            <button class="calc-button">6</button>
+            <button class="calc-button">&plus;</button>
+          </div>
+
+          <div class="calculator-buttons-row">
+            <button class="calc-button">1</button>
+            <button class="calc-button">2</button>
+            <button class="calc-button">3</button>
+            <button class="calc-button">&minus;</button>
+          </div>
+
+          <div class="calculator-buttons-row">
+            <button class="calc-button">0</button>
+            <button class="calc-button">&equals;</button>
+          </div>
+        </div>
     </div>
-</body>
+  </body>
 </html>

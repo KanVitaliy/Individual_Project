@@ -7,6 +7,7 @@ html {
 *::before,
 *::after{
     box-sizing: border-box;
+    font-family: Andale mono, monospace;
     margin: 0;
     padding: 0;
 }
@@ -15,46 +16,48 @@ html {
     position: absolute;
     top: 20%;
     left: 10%;
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35 ,35, 0.1);
-    color: #232323;
     backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    background: rgba(255, 255, 255, 0.30);
+    background: rgba(150, 150, 150, 1);
     border: 1px solid #000;
     flex-basis: 400px;
-    height: 58%;
+    height: 62%;
     width: 22%;
     padding: 20px 35px;
 }
 
-.screen {
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.01);
+.output {
+    background: #fff;
+    align-items: flex-end;
+    border: 1px solid #000;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-    color: #232323;
-    font-size: 35px;
-    overflow: auto;
-    padding: 20px;
-    text-align: right;
     width: 100%;
-    position: relative;
-    top: 10px;
+    height: 80px;
+    margin-top: 30px;
+    text-align: right;
+    padding: 8px;
+    flex: 1;
+    font-size: 40px;
+    pointer-events: none;
+}
+
+.calculator-buttons {
+    margin-top: -15px;
 }
 
 .calculator-buttons-row{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 25px;
+    top: 50px;
 }
 
 .calc-button {
+    color: #fff;
+    background: #000;
+    font-size: 25px;
     border: 1px solid #000;
     border-radius: 16px;
     margin: 10px;
@@ -62,7 +65,23 @@ html {
     height: 60px;
 }
 
-.calc-button:hover {
+.calc-button:hover,
+.calc-button-x:hover,
+.calc-button-z:hover {
     background-color: inherit;
     cursor: pointer;
+}
+
+.calc-button-x, .calc-button-z {
+    background: #000;
+    color: #fff;
+    font-size: 25px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    margin: 10px;
+    width: 90px;
+}
+
+.calc-button-z {
+    width: 65px;
 }

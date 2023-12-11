@@ -5,77 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>site</title>
     
-    <!-- CSS and Backend -->
+    <!-- CSS and Script -->
     <link rel="stylesheet" href="css files/styles.css" />
     <link rel="stylesheet" href="css files/calculator.css" />
-    <script src="script.js"></script>
+    <script src="js files/calculator.js"></script>
+    <script src="js files/script.js"></script>
   </head>
   <body>
 
-    <!-- Buttons -->
+  <!-- Buttons -->
 
-    <div id="box">
-        <div class="black-line">
-          <div class="top-buttons">
-            <ul class="buttons-row-top">
-            <li class="math">
-                <a href="#">Math</a>
-            </li>
-            <li class="physics">
-              <a href="#">Physics</a>
-            </li>
-            <li class="chemistry">
-              <a href="#">Chemistry</a>
-            </li>
-            <li class="english">
-              <a href="#">English</a>
-            </li>
-            <li class="journal">
-              <a href="https://journal.top-academy.ru/ru/auth/login/index?returnUrl=%2Fru%2Fmain%2Fdashboard%2Fpage%2Findex">Journal</a>
-            </li>
-            </ul>
+  <div id="box">
+    <div class="black-line">
+      <div class="top-buttons">
+        <ul class="buttons-row-top">
+          <li class="math" id="math-btn">
+              <a href="#">Math</a>
+              <ul class="math-list" id="math-list">
+                <li class="equations"><a href="#"></a>Уравнения</a></li>
+                <li class="functions"><a href="#"></a>Функции</a></li>
+                <li class="logs"><a href="#"></a>Логарифмы</a></li>
+              </ul>
+          </li>
+          <li class="physics">
+            <a href="#">Physics</a>
+          </li>
+          <li class="chemistry">
+            <a href="#">Chemistry</a>
+          </li>
+          <li class="english">
+            <a href="#">English</a>
+          </li>
+          <li class="journal">
+            <a href="https://journal.top-academy.ru/ru/auth/login/index?returnUrl=%2Fru%2Fmain%2Fdashboard%2Fpage%2Findex" target="_blank">Journal</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+
+      <!-- Calculator -->
+
+    <div class="wrapper">
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+
+      <div class="calculator-buttons">
+        <div class="calculator-buttons-row">
+          <button class="calc-button" data-all-clear>AC</button>
+          <button class="calc-button" data-delete>DEL</button>
+          <button class="calc-button-x" data-operation>×</button>
         </div>
+
+        <div class="calculator-buttons-row">
+          <button class="calc-button" data-equals>7</button>
+          <button class="calc-button" data-equals>8</button>
+          <button class="calc-button" data-equals>9</button>
+          <button class="calc-button" data-operation>÷</button>
         </div>
 
-        <!-- Calculator -->
-
-        <div class="wrapper">
-        <div class="screen">0</div>
-
-        <div class="calculator-buttons">
-          <div class="calculator-buttons-row">
-            <button class="calc-button" id="AC">AC</button>
-            <button class="calc-button">&plus;&Backslash;&minus;</button>
-            <button class="calc-button">&percnt;</button>
-            <button class="calc-button">&times;</button>
-          </div>
-
-          <div class="calculator-buttons-row">
-            <button class="calc-button">7</button>
-            <button class="calc-button">8</button>
-            <button class="calc-button">9</button>
-            <button class="calc-button">&divide;</button>
-          </div>
-
-          <div class="calculator-buttons-row">
-            <button class="calc-button">4</button>
-            <button class="calc-button">5</button>
-            <button class="calc-button">6</button>
-            <button class="calc-button">&plus;</button>
-          </div>
-
-          <div class="calculator-buttons-row">
-            <button class="calc-button">1</button>
-            <button class="calc-button">2</button>
-            <button class="calc-button">3</button>
-            <button class="calc-button">&minus;</button>
-          </div>
-
-          <div class="calculator-buttons-row">
-            <button class="calc-button">0</button>
-            <button class="calc-button">&equals;</button>
-          </div>
+        <div class="calculator-buttons-row">
+          <button class="calc-button" data-equals>4</button>
+          <button class="calc-button" data-equals>5</button>
+          <button class="calc-button" data-equals>6</button>
+          <button class="calc-button" data-operation>+</button>
         </div>
+
+        <div class="calculator-buttons-row">
+          <button class="calc-button" data-equals>1</button>
+          <button class="calc-button" data-equals>2</button>
+          <button class="calc-button" data-equals>3</button>
+          <button class="calc-button" data-operation>−</button>
+        </div>
+
+        <div class="calculator-buttons-row">
+          <button class="calc-button-z" data-equals>0</button>
+          <button class="calc-button-z" data-equals>.</button>
+          <button class="calc-button" data-equals>=</button>
+        </div>
+    </div>
     </div>
   </body>
 </html>

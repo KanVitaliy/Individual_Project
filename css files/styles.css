@@ -1,9 +1,5 @@
-ul {
-    list-style-type: none;
-}
-
 body{
-    background: rgb(223,217,205);
+    background: #fff;
 }
 
 .black-line {
@@ -15,12 +11,13 @@ body{
     height: 7%;
 }
 
-ul {
+.buttons-row-top{
+    list-style-type: none;
     display: flex;
     position: absolute;
     top: 18px;
     right: 35%;
-    gap: 40px;
+    gap: 60px;
     font-size: 150%;
     color: #fff;
 }
@@ -45,4 +42,31 @@ li a::before{
 li a:hover:before {
     width: 100%;
     transform: scaleX(1);
+}
+
+.journal {
+    position: absolute;
+    top: -10px;
+    left: -123%;
+    font-size: 40px;
+}
+
+.math-list {
+    position: absolute;
+    left: -10%;
+    display: none;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.math-list li {
+    /* border: 5px solid #000; */
+    border-top-width: 0px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    background: rgb(25,27,29);
+}
+
+.math:hover .math-list{
+    display: block;
 }

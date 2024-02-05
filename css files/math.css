@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono';
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url(/fonts/webfonts/JetBrainsMono-Medium.woff2);
+}
+
+body {
+    height: 100vh;
+    background: rgb(34, 34, 34);
+    overflow: hidden;
+}
+
+.red {
+    background: rgb(132, 33, 33);
+    position: absolute;
+    top: -400px;
+    left: -450px;
+    width: 800px;
+    height: 1500px;
+    animation: rotation ease-in-out 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotation {
+    0% {
+        rotate: 30deg;
+    }
+    100% {
+        rotate: 0;
+    }
+}
+
